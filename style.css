@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 0;
+    background-color: #e9ecf1;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2b2b2b;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Основний контейнер */
+.resume {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+.header {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dcdfe6;
+}
+
+.header h1 {
+    margin: 0 0 10px 0;
+    font-size: 56px;
+    font-weight: 700;
+    color: #1f2a44;
+}
+
+.header p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b7280;
+    letter-spacing: 1px;
+}
+
+.theme-box {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    gap: 20px;
+}
+
+/* Колонки */
+.left-column {
+    width: 30%;
+    border-right: 1px solid #e5e7eb;
+    padding-right: 15px;
+}
+
+.right-column {
+    width: 70%;
+}
+
+/* Секції */
+section,
+.content-block {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eef0f3;
+}
+
+section:last-child,
+.content-block:last-child {
+    border-bottom: none;
+}
+
+/* Заголовки */
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4a6fa5;
+    border-left: 4px solid #4a6fa5;
+    padding-left: 8px;
+}
+
+/* Текст */
+p {
+    margin: 6px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Списки */
+ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* Блок досвіду */
+.item {
+    margin-bottom: 15px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.item-header h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2a44;
+}
+
+.item-header span {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Коментарі */
+.comment {
+    padding: 12px 0;
+    border-bottom: 1px solid #dcdfe6;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment h4 {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    color: #1f2a44;
+}
+
+.comment .comment-email {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #dcdfe6;
+}
+
+/* Модальне вікно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 500px;
+    margin: 7% auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #cfd5df;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a6fa5;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #395886;
+}
+
+/* Нічна тема */
+body.dark-theme {
+    background-color: #1a1d24;
+    color: #e8ecf3;
+}
+
+body.dark-theme .resume {
+    background-color: #252a33;
+    color: #e8ecf3;
+}
+
+body.dark-theme .header {
+    border-bottom-color: #3d4654;
+}
+
+body.dark-theme .header h1 {
+    color: #ffffff;
+}
+
+body.dark-theme .header p {
+    color: #c3cad5;
+}
+
+body.dark-theme .left-column {
+    border-right-color: #3d4654;
+}
+
+body.dark-theme section,
+body.dark-theme .content-block,
+body.dark-theme .comment,
+body.dark-theme .footer {
+    border-color: #3d4654;
+}
+
+body.dark-theme h2 {
+    color: #8fb3ff;
+    border-left-color: #8fb3ff;
+}
+
+body.dark-theme .item-header h3,
+body.dark-theme .comment h4 {
+    color: #ffffff;
+}
+
+body.dark-theme .item-header span,
+body.dark-theme .comment .comment-email {
+    color: #b8c0cc;
+}
+
+body.dark-theme .modal-content {
+    background-color: #252a33;
+    color: #e8ecf3;
+}
+
+body.dark-theme form input,
+body.dark-theme form textarea {
+    background-color: #1b1f27;
+    color: #ffffff;
+    border-color: #465062;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .resume {
+        width: 95%;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .left-column {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

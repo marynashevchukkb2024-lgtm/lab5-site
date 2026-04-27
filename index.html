@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Резюме студента">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Марини Шевчук</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="resume">
+
+        <header class="header">
+            <h1>Марина Шевчук</h1>
+            <p>СТУДЕНТКА</p>
+
+            <div class="theme-box">
+                <label for="themeToggle">Нічний режим</label>
+                <input type="checkbox" id="themeToggle">
+            </div>
+        </header>
+
+        <main class="layout">
+
+            <aside class="left-column">
+                <section>
+                    <h2>Мета</h2>
+                    <p>
+                        Отримати можливість розвивати свої знання та практичні навички
+                        у сфері інформаційних технологій і кібербезпеки, застосовуючи
+                        відповідальність, уважність та бажання навчатися.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Навички</h2>
+                    <ul>
+                        <li>HTML, CSS</li>
+                        <li>Python</li>
+                        <li>Основи програмування</li>
+                        <li>Базові знання Git</li>
+                        <li>Робота з документацією</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Контакти</h2>
+                    <ul>
+                        <li>Львів</li>
+                        <li>+380984896858</li>
+                        <li>maruna.shevchuk.uk@gmail.com</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <section class="right-column">
+                <div class="content-block">
+                    <h2>Освіта</h2>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Національний університет "Львівська політехніка"</h3>
+                            <span>2024 – теперішній час</span>
+                        </div>
+                        <p><strong>Спеціальність:</strong> Кібербезпека</p>
+                        <p>
+                            Навчаюсь за спеціальністю "Кібербезпека", опановую основи
+                            програмування, веб-розробки, інформаційної безпеки та сучасних ІТ-технологій.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Досвід</h2>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Навчальні проєкти</h3>
+                            <span>2024 – 2026</span>
+                        </div>
+                        <p>
+                            Виконувала практичні та лабораторні роботи з HTML, CSS, Python
+                            та основ верстки веб-сторінок.
+                        </p>
+                        <p>
+                            Створювала прості веб-сторінки, оформлювала їх за допомогою CSS,
+                            використовувала Flexbox для побудови макета сторінки.
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Досвід у сфері обслуговування</h3>
+                            <span>раніше</span>
+                        </div>
+                        <p>
+                            Маю досвід роботи у сфері обслуговування, завдяки чому розвинула
+                            відповідальність, комунікабельність, уважність до деталей та вміння
+                            працювати з людьми.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Мови</h2>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Українська</h3>
+                            <span>вільно</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Англійська</h3>
+                            <span>базовий рівень</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Коментарі попередніх роботодавців</h2>
+                    <div id="comments">
+                        <p>Завантаження коментарів...</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <h2>Інформація з localStorage</h2>
+            <div id="storageInfo"></div>
+        </footer>
+    </div>
+
+    <!-- Модальне вікно -->
+    <div class="modal" id="feedbackModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2>Форма зворотного зв'язку</h2>
+
+            <!-- СЮДИ ВСТАВИШ СВІЙ endpoint із Formspree -->
+            <form action="https://formspree.io/f/mwvwaqko" method="POST">
+                <label for="name">Ім’я</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Номер телефону</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Текст повідомлення</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
