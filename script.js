@@ -37,7 +37,6 @@ showLocalStorage();
 // ---------------------------
 const commentsContainer = document.getElementById("comments");
 
-// Тут ставиш свій номер у журналі
 const variantNumber = 25;
 
 fetch(`https://jsonplaceholder.typicode.com/posts/${variantNumber}/comments`)
